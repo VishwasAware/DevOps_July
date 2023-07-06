@@ -18,8 +18,8 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.10.0</version>
 					<configuration>
-						<source>${maven.compiler.source}</source>
-						<target>${maven.compiler.targer}</target>
+						<source>1.7</source>
+						<target>1.7</target>
 					</configuration>
 				</plugin>
 				<plugin>
