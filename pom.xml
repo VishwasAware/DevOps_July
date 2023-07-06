@@ -4,8 +4,11 @@
 	<artifactId>JulyDevOpsTraining</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>JulyDevOpsTraining</name>
-	
-	
+	<properties>
+		<project.build.SourceEncoding></project.build.SourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -13,24 +16,24 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.10.0</version>
-<<<<<<< HEAD
-					
-=======
 					<configuration>
-						<source>1.7</source>
-						<target>1.7</target>
+						<source>${maven.compiler.source}</source>
+						<target>${maven.compiler.targer}</target>
 					</configuration>
->>>>>>> 5d3e3f711149ce7b30874ec4995f8305a717f026
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>3.1.2</version>
+					<version>3.0.0</version>
 					<configuration>
 						<suiteXmlFiles>
 							<suiteXmlFile>
 
+ 
+
 src\test\resources\TestNG\testng.xml
+
+ 
 
 </suiteXmlFile>
 						</suiteXmlFiles>
@@ -43,8 +46,8 @@ src\test\resources\TestNG\testng.xml
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.8.0</version>
-			<scope>compile</scope>
+			<version>7.7.1</version>
+			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
