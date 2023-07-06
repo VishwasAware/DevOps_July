@@ -6,7 +6,7 @@
 	<name>JulyDevOpsTraining</name>
 	
 	<properties>
-		//<project.build.SourceEncoding></project.build.SourceEncoding>
+		<project.build.SourceEncoding></project.build.SourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
